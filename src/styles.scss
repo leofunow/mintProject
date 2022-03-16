@@ -1,0 +1,66 @@
+$form-range-thumb-active-bg: #49dea5;
+$form-range-thumb-bg: #00c67e;
+@import "node_modules/bootstrap/scss/bootstrap";
+body {
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #435777;
+  font-size: 18px;
+}
+
+button {
+  color: white;
+  background-color: #00c67e;
+  border: none;
+  box-shadow: 0 0 10px #c5c5c5;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 26px;
+  color: #435777;
+}
+
+.greenbuttons {
+  margin: 10px 10px 20px 10px;
+  color: #00c67e;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.whitecard {
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 20px 2% 20px 2%;
+  height: 400px;
+  box-shadow: 0 0 20px 5px #e8e8e8;
+}
+
+.whitecard button {
+  box-shadow: none;
+  margin: 5px 0 5px 0;
+  background-color: white;
+  border: solid 1px #00c67e;
+  color: #00c67e;
+  transition: 0.3s;
+}
+
+.whitecard button:hover {
+  background-color: #00c67e;
+  color: white;
+}
+
+a{
+  color: #00c67e;
+}
+a:hover{
+  color: #00b6a6;
+}

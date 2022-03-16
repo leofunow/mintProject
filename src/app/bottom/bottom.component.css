@@ -1,0 +1,18 @@
+.bottom_buttons{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+  max-width: 50%;
+  height: calc(640px - 30vw);
+  min-height: 200px;
+  max-height: 500px;
+
+}
+.bottom_buttons li{
+
+
+  padding: 10px 5%;
+  font-size: 16px;
+}
