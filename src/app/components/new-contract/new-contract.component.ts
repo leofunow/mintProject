@@ -16,9 +16,9 @@ export class NewContractComponent implements OnInit {
     Name: new FormControl("", Validators.required),
     MidName: new FormControl("", Validators.required),
     Email: new FormControl("", Validators.email),
-    Phone: new FormControl("", Validators.pattern("([0-9][ \\t\\v\\r\\n\\f]*){11}")),
-    Passport: new FormControl("", Validators.pattern("([0-9][ \\t\\v\\r\\n\\f]*){10}")),
-    Snils: new FormControl("", Validators.pattern("([0-9][ \\t\\v\\r\\n\\f]*){11}")),
+    Phone: new FormControl("", [Validators.required, Validators.pattern("([0-9][ \\t\\v\\r\\n\\f]*){11}")]),
+    Passport: new FormControl("", [Validators.required, Validators.pattern("([0-9][ \\t\\v\\r\\n\\f]*){10}")]),
+    Snils: new FormControl("", [Validators.required, Validators.pattern("([0-9][ \\t\\v\\r\\n\\f]*){11}")]),
   });
 
   constructor(private contractService: ContractsService, private userService: UsersService, private route: Router) {

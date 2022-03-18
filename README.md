@@ -1,27 +1,35 @@
 # MintProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+### Запуск:
+Запускается на windows, linux, mac.
+Для работы необходимо установить node.js.
 
-## Development server
+В коммандной строке открыть папку с проектом
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`npm install`
 
-## Code scaffolding
+`ng serve`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Локальный сервер откроется по адресу `http://localhost:4200/`
+## Описание
 
-## Build
+Сайт для вымышленного НПФ "МИНТ". 
+Замысел создать приятный глазу с точки зрения дизайна сайт и проработать в нем техническую часть.
+Имеет в себе адаптированный под разные размеры экранов единый дизайн.
+Аккаунты, личный кабинет, заявка на подписание договора, проработанная
+главная страница с калькулятором пенсии.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+База данных и хостинг предоставлены google firebase.
 
-## Running unit tests
+## Скриншоты и видео
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[ТЫК](https://drive.google.com/file/d/12XHjEOkB35Vnc_Vn1LutBPFUBsqSjjWD/view?usp=sharing)
 
-## Running end-to-end tests
+##Попробовать проект
+Вы можете посмотреть как работает проект,
+перейдя по [ссылке](https://lfs-mint-project.web.app).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+

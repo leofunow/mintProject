@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
 
   regForm: FormGroup = new FormGroup({
     login: new FormControl("", Validators.email),
-    snils: new FormControl("", Validators.pattern("([0-9][ \\t\\v\\r\\n\\f]*){11}")),
+    snils: new FormControl("", [Validators.required, Validators.pattern("([0-9][ \\t\\v\\r\\n\\f]*){11}")]),
     password: new FormControl("", Validators.required)
   });
   isCorrect = true;
