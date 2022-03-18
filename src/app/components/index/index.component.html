@@ -9,7 +9,8 @@
                justify-content: space-between;">
       <li class="arrows">
         <div style="height: 300px; display: flex; flex-direction: column; justify-content: center ">
-          <img src="../../../assets/img/Arrow_left.png" style="width: 15px; cursor: pointer" (click)="lowercard()"></div>
+          <img src="../../../assets/img/Arrow_left.png" style="width: 15px; cursor: pointer" (click)="lowercard()">
+        </div>
       </li>
       <li>
         <div style="height: 300px; display: flex; flex-direction: column; justify-content: center">
@@ -69,13 +70,13 @@
       <button style="width: fit-content; align-self: center; margin-top: 50px" routerLink="login">Войти</button>
       <button style="width: fit-content; align-self: center" routerLink="/registration">Зарегистрироваться</button>
     </div>
-    <div class="whitecard" style="width: 95%;">
+    <div class="whitecard" style="width: 95%; max-width: 1000px">
       <p style="font-weight: bold; font-size: 26px; color: #435777; margin-bottom: 10px">Калькулятор пенсии</p>
       <p style="margin: 0 5% 10px 5%">
         Рассчитайте предполагаемый размер вашей накопительной и негосударственной пенсии
       </p>
       <div class="calcplaceholder">
-        <div style="width: 100%; min-width: 430px; text-align: right; padding-left: 5%; padding-right: 1%;">
+        <div style="max-width: 90vw; width: 60%; text-align: right; padding-left: 5%; padding-right: 1%;">
           <table class="ranges">
             <tr>
               <td style="width: 25%;">
@@ -116,8 +117,8 @@
                 <input type="range" class="form-range" min="18" [max]="getAgeRange()" id="ageRange"
                        [(ngModel)]="calc.age">
               </td>
-              <td style="padding-left: 10px; width: 25%">
-                <input type="text" [(ngModel)]="calc.age" class="textinput"> лет
+              <td style="padding-left: 10px; width: 25%;">
+                <input type="text" [(ngModel)]="calc.age" style=" min-width: 70px" class="textinput"> лет
               </td>
             </tr>
             <tr>
@@ -128,7 +129,7 @@
                 <input type="range" class="form-range" min="1000" max="100000" id="zpRange" [(ngModel)]="calc.salary">
               </td>
               <td style="padding-left: 10px; width: 25%">
-                <input type="text" [(ngModel)]="calc.salary" class="textinput"> ₽
+                <input type="text" [(ngModel)]="calc.salary" style=" min-width: 70px" class="textinput"> ₽
               </td>
             </tr>
             <tr>
@@ -140,7 +141,7 @@
                        [(ngModel)]="calc.payment">
               </td>
               <td style="padding-left: 10px; width: 25%">
-                <input type="text" [(ngModel)]="calc.payment" class="textinput"> ₽
+                <input type="text" [(ngModel)]="calc.payment" style=" min-width: 70px" class="textinput"> ₽
               </td>
             </tr>
             <tr>
@@ -151,13 +152,13 @@
                 <input type="range" class="form-range" min="1" max="9" id="percentRange" [(ngModel)]="calc.percent">
               </td>
               <td style="padding-left: 10px; width: 25%;">
-                <input type="text" [(ngModel)]="calc.percent" class="textinput"> %
+                <input type="text" [(ngModel)]="calc.percent" style=" min-width: 70px" class="textinput"> %
               </td>
             </tr>
           </table>
         </div>
         <div class="strip"></div>
-        <div style="text-align: right; padding-top: 50px; padding-left: 5%;padding-right: 5%">
+        <div style="text-align: right; padding-top: 50px; padding-left: 5%;padding-right: 5%; max-width: 400px">
           Итоговая сумма вашей пенсии
           <p style="font-size: 36px; font-weight: bold; color: #00b6a6">{{getCalc()}} ₽</p>
           <button routerLink="/newconract">Оформить сейчас</button>
