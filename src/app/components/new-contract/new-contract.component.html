@@ -1,0 +1,51 @@
+<div style="justify-content: space-around; display: flex">
+  <div style=" flex-direction: row; display: flex;">
+    <img src="assets/img/like.png" style="height: fit-content; align-self: center; width: 100%">
+  </div>
+  <div class="whitecard" style="max-width: 700px; width: 90%">
+    <h1 style="margin: 20px 0">Заключение договора</h1>
+    <div style="text-align: left; padding: 0 50px; max-width: 600px; align-self: center; width: 100%">
+      <form [formGroup]="contractForm" (ngSubmit)="submit()">
+        <label for="inputSurname">Фамилия</label>
+        <br>
+        <input type="text" class="form-control" id="inputSurname" formControlName="Surname" placeholder="Иванов">
+
+        <label for="inputName">Имя</label>
+        <br>
+        <input type="text" class="form-control" id="inputName" formControlName="Name" placeholder="Иван">
+
+        <label for="inputMidName">Отчество</label>
+        <br>
+        <input type="text" class="form-control" id="inputMidName" formControlName="MidName" placeholder="Иванович">
+
+        <label for="inputEmail">Электронный адрес</label>
+        <br>
+        <input type="email" class="form-control" id="inputEmail" formControlName="Email"
+               placeholder="example@gmail.com">
+
+        <label for="inputPhone">Номер телефона</label>
+        <br>
+        <input type="phone" class="form-control" id="inputPhone" formControlName="Phone" placeholder="88901234567">
+
+        <label for="inputPassport">Серия и номер паспорта</label>
+        <br>
+        <input type="text" class="form-control" id="inputPassport" formControlName="Passport" placeholder="1234 123456">
+
+        <label for="inputSnils">Снилс</label>
+        <br>
+        <input type="text" class="form-control" id="inputSnils" formControlName="Snils" placeholder="123 123 123 45">
+
+        <label for="inputPassportImg">Прикрепите фото паспорта</label>
+        <br>
+        <input type="file" class="form-control-file" id="inputPassportImg">
+
+        <label for="inputSnilsImg">Прикрепите фото СНИЛС</label>
+        <br>
+        <input type="file" class="form-control-file" id="inputSnilsImg">
+
+        <button style="width: 100%; margin-top: 50px" type="submit" [disabled]="contractForm.invalid">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+</div>

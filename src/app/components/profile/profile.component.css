@@ -1,0 +1,8 @@
+
+td {
+  padding: 10px;
+  width: 200px;
+}
+tr td:nth-child(1){
+  font-weight: bold;
+}

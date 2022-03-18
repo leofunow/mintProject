@@ -1,0 +1,43 @@
+<h1 style="margin:20px; text-align: center">Добро пожаловать, {{name}}!</h1>
+<div style="display: flex; padding: 20px; justify-content: space-around">
+  <div style="align-self: flex-start">
+    <h1>Мои обращения</h1>
+    <ul style="list-style: none">
+      <li *ngFor="let contr of contracts">
+        <h1 style="color: #0b2c57; font-weight: normal; font-size: 20px; cursor: pointer"
+            (click)="changeCard(contr.id)">
+          Обращение {{contr.id}}
+        </h1>
+      </li>
+    </ul>
+    <button class="btn btn-danger" (click)="exit()" style="width: 100%">Выйти</button>
+  </div>
+  <div class="whitecard" *ngIf="contract" style="max-width: 500px; padding: 20px; text-align: left; width: 100%">
+    <table style="align-self: center">
+      <tr>
+        <td>Фамилия</td>
+        <td>{{contract.surname}}</td>
+      </tr>
+      <tr>
+        <td>Имя</td>
+        <td>{{contract.name}}</td>
+      </tr>
+      <tr>
+        <td>Отчество</td>
+        <td>{{contract.midname}}</td>
+      </tr>
+      <tr>
+        <td>Снилс</td>
+        <td>{{contract.snils}}</td>
+      </tr>
+      <tr>
+        <td>Паспорт</td>
+        <td>{{contract.passport}}</td>
+      </tr>
+      <tr>
+        <td>Номер телефона</td>
+        <td>{{contract.phone}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+h2{
+  font-size: 46px;
+  color: #00b6a6;
+  display: inline;
+}
+.adnumbers{
+  padding: 20px 2%;
+  font-size: 24px;
+}
+.adnumbers > div{
+  margin-top: 50px;
+  margin-left: 5%;
+}
+.bignumber{
+  font-size: 46px;
+  color: #00b6a6;
+}
+@media (max-width: 900px) {
+  .bignumber {
+    font-size: 28px;
+  }
+}
+.smallnumber{
+  font-size: 18px;
+  color: #435777;
+}

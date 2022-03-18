@@ -1,0 +1,45 @@
+<div style="text-align: center">
+  <ul class="headerbuttons" style="display: flex; ">
+    <li style="display: flex;">
+      <img routerLink="/" src="../../../assets/img/logo.svg"
+           style="height: 150px; width: auto; margin: 10px;  cursor: pointer; outline: none">
+      <div>
+        <p style="font-size: 26px; color: #79839a; vertical-align: top; margin: 10px 0 0 10px; padding-right: 10px">8 800 123 45 67</p>
+        <p style="font-size: 16px; color: #79839a; vertical-align: top; margin: 0 0 0 10px;padding-right: 10px">Телефон для связи</p>
+
+      </div>
+
+    </li>
+    <li style="vertical-align: top; margin-left: -150px">
+      <ul class="headerbuttons"
+          style="flex-direction: row; margin-top: 20px; padding-right: 20px;  width: 50vw;min-width: 200px; max-width: 600px">
+        <li>
+          <p class="greenbuttons" routerLink="/help">Поддержка</p>
+        </li>
+        <li>
+          <p class="greenbuttons" (click)="lk()">Личный кабинет</p>
+        </li>
+        <li>
+          <button style="margin-left: 10px" routerLink="/newconract"> Оформить договор</button>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="grayheaderbuttons" >
+    <li routerLink="/ipp" routerLinkActive="grayactive">
+      Индивидуальный пенсионный план
+    </li>
+    <li routerLink="/PrivClients" routerLinkActive="grayactive">
+      Частным клиентам
+    </li>
+    <li routerLink="/CorpClients" routerLinkActive="grayactive">
+      Корпоративным клиентам
+    </li>
+    <li routerLink="/about" routerLinkActive="grayactive">
+      О фонде
+    </li>
+    <li routerLink="/contacts" routerLinkActive="grayactive">
+      Контакты
+    </li>
+  </ul>
+</div>
